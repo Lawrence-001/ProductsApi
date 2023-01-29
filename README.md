@@ -1,3 +1,3 @@
 .Net core MVC API.
 
-Concepts: Dependency injenction, Repository pattern, EF, DTOs and AutoMapper
+Concepts: Dependency injenction, Repository pattern, REST, EF, DTOs and AutoMapper
