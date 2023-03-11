@@ -1,4 +1,5 @@
-﻿using Products.Api.Models;
+﻿using Products.Api.DTOs.Product;
+using Products.Api.Models;
 
 namespace Products.Api.Data
 {
@@ -54,6 +55,21 @@ namespace Products.Api.Data
         {
             return _context.Products.ToList();
         }
+
+        //public ProductWithCategories GetProductWithDetails(int id)
+        //{
+        //    var _produWithDetails = _context.Products.Where(p => p.Id == id).Select(prod => new ProductWithCategories()
+        //    {
+        //        Name = prod.Name,
+        //        Description = prod.Description,
+        //        Price = prod.Price,
+        //        PictureName = prod.PictureName,
+        //        CompanyName = prod.Company.Name,
+        //        CategoryName = prod.Company.Name
+        //    }).FirstOrDefault();
+        //    return (ProductWithCategories)_produWithDetails;
+        //}
+
         public Product UpdateProduct(int id, Product product)
         {
             var result = _context.Products.FirstOrDefault(p => p.Id == id);

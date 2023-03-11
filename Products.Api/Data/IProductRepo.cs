@@ -1,4 +1,5 @@
-﻿using Products.Api.Models;
+﻿using Products.Api.DTOs.Product;
+using Products.Api.Models;
 
 namespace Products.Api.Data
 {
